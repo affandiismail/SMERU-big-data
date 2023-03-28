@@ -1,0 +1,11 @@
+https://dapo.kemdikbud.go.id/rekap/dataSekolah?id_level_wilayah=0&kode_wilayah=000000&semester_id=20222
+
+https://dapo.kemdikbud.go.id/rekap/dataSekolah?id_level_wilayah=1&kode_wilayah=050000&semester_id=20222
+
+https://dapo.kemdikbud.go.id/rekap/dataSekolah?id_level_wilayah=2&kode_wilayah=056000&semester_id=20222
+
+https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=056020&semester_id=20222&bentuk_pendidikan_id=
+
+https://dapo.kemdikbud.go.id/rekap/sekolahDetail?semester_id=20222&sekolah_id=E39CEEF0F710444E3432
+
+https://dapo.kemdikbud.go.id/sekolah/E39CEEF0F710444E3432

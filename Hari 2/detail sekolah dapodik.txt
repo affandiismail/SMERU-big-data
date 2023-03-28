@@ -1,0 +1,7 @@
+Tab data utama (identitas, data pelengkap, data rinci, kontak utama): tag=div class=panel-body
+
+Data profile: tag=div class=profile-username
+
+Data rekapitulasi: json (https://dapo.kemdikbud.go.id/rekap/sekolahDetail?semester_id=20222&sekolah_id=E39CEEF0F710444E3432)
+
+tautan ke sekolah kita: tag=div class=profile-userbuttons

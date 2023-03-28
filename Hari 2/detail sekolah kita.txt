@@ -1,0 +1,13 @@
+url sekolah kita=https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/c02ef67b-8d18-e111-bc52-4b6c161d5fdd
+
+data akreditasi: tag=div class=box-body box-profile
+
+data overview: tag=div class=col-xs-12 col-md-3 text-left
+
+detail guru: tag=div id=ptk
+
+rombel: tag=div id=rombel
+
+sarpras: tag=div id=sarpras
+
+bantuan: tag=div id=bansos
