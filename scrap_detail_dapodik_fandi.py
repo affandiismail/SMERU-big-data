@@ -59,20 +59,3 @@ for i, wilayah in df_wilayah.iloc[5636:len(df_wilayah)].iterrows():
     get_data_dapodik(wilayah.kode_kec)
 end = timeit.default_timer()
 print(end - start)
-
-df_wilayah
-
-url = f'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=056020&semester_id=20222&bentuk_pendidikan_id='
-r = requests.get(url)
-daftar_sekolah = r.json()
-
-url_html = 'https://dapo.kemdikbud.go.id/sekolah/4E0CC2693ADA09B17A62'
-r_html = requests.get(url_html)
-html_soup = BeautifulSoup(r_html.content, 'html.parser')
-
-data = []
-data['link_sekolah_kita'] = html_soup.find('div', {'class': 'profile-userbuttons'}).find('a')['href']
-
-aww = {}
-aww ['asa'] = html_soup.find('div', {'class': 'profile-userbuttons'}).find('a')['href']
-
