@@ -52,10 +52,10 @@ def get_data_dapodik(kode_kec): # Dibuat menjadi fungsi agar lebih mudah dibaca
     df_sekolah.to_csv(f'data/{i}_detail_dapodik_{kode_kec.strip()}.csv', index=False)
 
 # Contoh penggunaan, menggunakan file wilayah kecamatan yang didapat dari program scrap_wilayah.py
-df_wilayah = pd.read_csv('D:\SMERU\Belajar python\QSS\Hari 2\data\wilayah_dapodik.csv', dtype='str')
+df_wilayah = pd.read_csv('data/wilayah_dapodik.csv', dtype='str')
 start = timeit.default_timer()
 #ganti jadi 
-for i, wilayah in df_wilayah.iloc[592:len(df_wilayah)].iterrows():
+for i, wilayah in df_wilayah.iloc[5636:len(df_wilayah)].iterrows():
     get_data_dapodik(wilayah.kode_kec)
 end = timeit.default_timer()
 print(end - start)
