@@ -145,7 +145,7 @@ la var semester "Semester"
 notes : Data ini diambil tanggal 27 Maret - 03 April 2023
 notes : JANGAN PAKAI VARIABEL TANPA LABEL KARENA TIDAK MUNCUL DI TAMPILAN WEB DAPODIK
 
-save "C:\Users\aaffa\OneDrive\Documents\GitHub\SMERU-big-data\data\dapodik_v01.dta", replace
+save "C:\Users\aaffa\OneDrive\Study Group Big Data\Data\dapodik_v01.dta", replace
 
 
 

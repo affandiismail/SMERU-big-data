@@ -24,4 +24,4 @@ df_append['dusun'] = df_append['dusun'].astype(str)
 
 
 df_append.to_parquet('data\dapodik.parquet', compression='gzip', engine='pyarrow', index=False)
-df_append.to_csv('data\dapodik.csv', index=False)
+df_append.to_csv('C:\Users\aaffa\OneDrive\Study Group Big Data\Data\dapodik.csv', index=False)
