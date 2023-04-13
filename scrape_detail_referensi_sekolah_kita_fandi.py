@@ -190,6 +190,6 @@ def get_sekolah(kec_code, jenjang):
 
 df_wilayah = pd.read_csv('data/data_sekolah_kita/df_wilayah/wilayah_sekolah_kita.csv', dtype='str')
 
-for i, wilayah in df_wilayah.iloc[346:len(df_wilayah)].iterrows():
+for i, wilayah in df_wilayah.iloc[5327:len(df_wilayah)].iterrows():
     akreditasi = get_sekolah(wilayah.kec_code, 'paud')
 
