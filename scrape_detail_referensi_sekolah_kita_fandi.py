@@ -160,16 +160,22 @@ def get_sekolah(kec_code, jenjang):
 
         for element in tab_peta.find_all('div', {'class': 'col-lg-4 col-md-4'}):
             text = element.get_text()
-            if text.split('\n')[1].strip().split(': ')[1] == '' or text.split('\n')[1].strip().split(': ')[1] == '-' or text.split('\n')[1].strip().split(': ')[1] == 0:
+            if text.split('\n')[1].strip().split(':')[1] == '' or text.split('\n')[1].strip().split(':')[1] == '-' or text.split('\n')[1].strip().split(':')[1] == 0:
                 value = None
             else:
-                value = text.split('\n')[1].strip().split(': ')[1]
-            data[text.split('\n')[1].strip().split(': ')[0].lower().replace(' ', '_')] = value
-            if text.split('\n')[2].strip().split(': ')[1] == '' or text.split('\n')[2].strip().split(': ')[1] == '-' or text.split('\n')[2].strip().split(': ')[1] == 0:
+                if text.split('\n')[1].strip().split(': ')[1] == '' or text.split('\n')[1].strip().split(': ')[1] == '-' or text.split('\n')[1].strip().split(': ')[1] == 0:
+                    value = None
+                else:
+                    value = text.split('\n')[1].strip().split(': ')[1]
+                data[text.split('\n')[1].strip().split(': ')[0].lower().replace(' ', '_')] = value
+            if text.split('\n')[2].strip().split(':')[1] == '' or text.split('\n')[2].strip().split(':')[1] == '-' or text.split('\n')[2].strip().split(':')[1] == 0:
                 value = None
             else:
-                value = text.split('\n')[2].strip().split(': ')[1]
-            data[text.split('\n')[2].strip().split(': ')[0].lower().replace(' ', '_')] = value
+                if text.split('\n')[2].strip().split(': ')[1] == '' or text.split('\n')[2].strip().split(': ')[1] == '-' or text.split('\n')[2].strip().split(': ')[1] == 0:
+                    value = None
+                else:
+                    value = text.split('\n')[2].strip().split(': ')[1]
+                data[text.split('\n')[2].strip().split(': ')[0].lower().replace(' ', '_')] = value
 
         try:
             data_sekolah = get_data_sekolah_kita(data['link_sekolah_kita'])
@@ -191,5 +197,5 @@ def get_sekolah(kec_code, jenjang):
 df_wilayah = pd.read_csv('data/data_sekolah_kita/df_wilayah/wilayah_sekolah_kita.csv', dtype='str')
 
 for i, wilayah in df_wilayah.iloc[0:len(df_wilayah)].iterrows():
-    akreditasi = get_sekolah(wilayah.kec_code, 'dikti')
+    akreditasi = get_sekolah(wilayah.kec_code, 'dikmas')
 
