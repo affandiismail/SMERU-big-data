@@ -201,4 +201,4 @@
         df_wilayah = pd.read_csv('data/data_sekolah_kita_v2/df_wilayah/wilayah_sekolah_kita.csv', dtype='str')
 
         for i, wilayah in df_wilayah.iloc[0:len(df_wilayah)].iterrows():
-            akreditasi = get_sekolah(wilayah.kec_code, 'dikmas')
+            akreditasi = get_sekolah(wilayah.kec_code, 'dikmen')
